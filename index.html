@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Dynamics calculator with projectile, circular, and spring motion modes</h2>
+
+<div class="app">
+  <div class="sidebar">
+    <div>
+      <div class="section-label">Motion type</div>
+      <div class="tab-bar" id="modeTabs">
+        <button class="tab active" data-mode="projectile">Projectile</button>
+        <button class="tab" data-mode="circular">Circular</button>
+        <button class="tab" data-mode="spring">Spring</button>
+      </div>
+    </div>
+
+    <div id="inputFields" style="display: flex; flex-direction: column; gap: 1.25rem;"></div>
+
+    <div class="divider"></div>
+
+    <div class="btn-row">
+      <button class="btn-run" id="btnPlayPause"><i class="ti ti-player-pause"></i> Pause</button>
+      <button class="btn-reset" id="btnReset" title="Restart Simulation"><i class="ti ti-refresh"></i> Reset</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div>
+      <div class="section-label">Real-time Metrics</div>
+      <div class="metrics" id="metricsGrid"></div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div style="display:flex; align-items:center; justify-content:space-between;">
+      <div style="font-size:15px; font-weight:600; color:var(--color-text-primary, #111);" id="chartTitle">Trajectory Sandbox</div>
+      <div class="legend" id="chartLegend"></div>
+    </div>
+    <div class="canvas-wrap" id="canvasWrap">
+      <canvas id="vizCanvas"></canvas>
+    </div>
+    <div>
+      <div class="section-label">Instantaneous Vector Data</div>
+      <div class="results-table-container">
+        <table class="results-table" id="dataTable">
+          <thead><tr id="tableHead"></tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
