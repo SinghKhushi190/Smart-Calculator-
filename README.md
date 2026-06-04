@@ -6,8 +6,8 @@ A browser-based physics simulation and calculator for visualizing **Projectile**
 
 ## Preview
 
-> Add screenshots here after capturing the simulator in action.
-> Example: `![Projectile Motion](./screenshots/projectile.png)`
+> Add here after capturing the simulator in action.
+> <video controls src="20260604-1254-09.6634699.mp4" title="Title"></video>
 
 ---
 
@@ -64,11 +64,6 @@ No installation or build step required — just open in a browser.
 ```bash
 # Option 1: Open directly
 open index.html
-
-# Option 2: Serve locally
-npx serve .
-# or
-python -m http.server 8080
 ```
 
 Then visit `http://localhost:8080` in your browser.
