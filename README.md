@@ -66,8 +66,6 @@ No installation or build step required — just open in a browser.
 open index.html
 ```
 
-Then visit `http://localhost:8080` in your browser.
-
 ---
 
 ## Usage
